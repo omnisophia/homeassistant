@@ -1,0 +1,30 @@
+# EMAIL2SMS
+## T-MOBILE:       [Phone_Number]@tmomail.net
+## AT&T:           [Phone_Number]@txt.att.net
+## Sprint:         [Phone_Number]@messaging.sprintpcs.com
+## Verizon:        [Phone_Number]@vtext.com
+## Boost Mobile:   [Phone_Number]@sms.myboostmobile.com
+## MetroPCS:       [Phone_Number]@mymetropcs.com
+
+### Feel Free to add more
+
+#Feel Free to remove all comments.
+# [CRITICAL!] PLEASE REMOVE ALL COMMENTS BELOW:
+## Be Sure to replace the entire value between brackets, including the brackets themselves. "[REPLACEME ME]"
+
+notify:
+  - name: "[name_me]"
+    platform: smtp
+    server: "smtp.gmail.com"
+    port: 587
+    timeout: 15
+    sender: "[example@gmail.com]"
+    encryption: starttls
+    username: "example@gmail.com"
+    password: "[YOUR-PASSWORD]"
+    ##RECIPIENT: You can add as many recipients as you'd like just be sure to follow the scaffolding provided
+    recipient:
+      - "[Phone_Number]@[MOBILEPROVIDER].net"
+      - "[backupemail]"
+    sender_name: "[NAME ME]"
+

@@ -1,0 +1,11 @@
+#Self Hosted Configuration snippet, please refer to README.md
+##Please remove the brackets when entering the values. []
+###Please omit comments from configuration.yaml
+
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+  - [NGINX/APAHCE REVERSEPROXY IP ADDRESS]
+  - [YOUR-SUBNET x.x.x.x/24 ]
+  ip_ban_enabled: [true/false]
+  login_attempts_threshold: 5
